@@ -1,7 +1,6 @@
 .box {
     height: 300px;
-    width: 700px;
-    /* border: rgb(221, 221, 221) 2px solid; */
+    width: 100%;
     position: relative;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .tenis {
-    width: 100%;
+    width: 80%;
     position: absolute;
     left: 0;
 }
@@ -28,6 +27,7 @@ h1 {
     font-size: 15rem;
     color: #0000004f;
     font-family: sans-serif;
+    display: none;
 }
 
 .box2 {
@@ -37,6 +37,8 @@ h1 {
     border: 1px solid #888888;
     padding: 10px;
     box-shadow: 5px 10px #888888;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .box2 p {
@@ -143,4 +145,24 @@ h4 {
     outline: none;
     color: white;
     text-decoration: none;
+}
+
+@media(min-width:1024px) {
+    body {
+        flex-direction: row;
+    }
+    h1 {
+        display: block;
+    }
+    .box {
+        max-width: 700px;
+    }
+    .box2 {
+        height: auto;
+        width: 400px;
+        margin: 0;
+    }
+    .tenis {
+        width: 100%;
+    }
 }

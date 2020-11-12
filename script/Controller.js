@@ -12,7 +12,7 @@ class Color {
     this.size();
     this.click();
     this.btn();
-    this.teste()
+  
 
   }
 
@@ -48,12 +48,12 @@ class Color {
   }
 
   swapElement(cores, img) {
-    this.linha(`${cores}`);
+    this.line(`${cores}`);
     this.size(`${cores}`);
     this.background.style.background = `${cores}`;
     this.btn(`${cores}`);
     this.imgs.src = `img/${img}.png`;
-  }
+  }  
 
   cores(cor) {
     switch (cor) {
@@ -106,7 +106,7 @@ class Color {
     });
   }
 
-  linha(cor) {
+  line(cor) {
     this.row.forEach((e) => {
       return (e.style.background = `${cor}`);
     });
